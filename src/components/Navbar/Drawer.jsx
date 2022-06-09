@@ -8,7 +8,7 @@ import {
   ListItemText,
   Typography,
 } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
+import AppsIcon from "@mui/icons-material/Apps";
 
 const links = ["Productos", "Ofertas", "Contacto"];
 
@@ -37,14 +37,16 @@ const DrawerComp = () => {
         </List>
       </Drawer>
       <IconButton
-        sx={{ transform: "scale(1.8)" }}
+        sx={{
+          transform: "scale(1.6)",
+          color: "#333",
+          "&:hover": { color: "#ff6a00" },
+        }}
         onClick={() => setOpenDrawer(!openDrawer)}
       >
-        <MenuIcon
+        <AppsIcon
           sx={{
-            color: "white",
             margin: "10px",
-            "&:hover": { color: "#bdffcb" },
           }}
         />
       </IconButton>

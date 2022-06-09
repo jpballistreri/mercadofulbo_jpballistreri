@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <>
-      <AppBar>
+      <AppBar style={{ background: "white" }}>
         <Toolbar>
           {responsiveMd ? (
             <>
@@ -36,17 +36,38 @@ const Header = () => {
                 value={value}
                 onChange={(e, value) => setValue(value)}
               >
-                <Tab label="Productos" />
-                <Tab label="Ofertas" />
-                <Tab label="Contacto" />
+                <Tab
+                  label="Productos"
+                  sx={{
+                    borderRadius: "50px",
+                    color: "#333",
+                    "&:hover": { backgroundColor: "#1bfb001c" },
+                  }}
+                />
+                <Tab
+                  label="Ofertas"
+                  sx={{
+                    borderRadius: "50px",
+                    color: "#333",
+                    "&:hover": { backgroundColor: "#1bfb001c" },
+                  }}
+                />
+                <Tab
+                  label="Contacto"
+                  sx={{
+                    borderRadius: "50px",
+                    color: "#333",
+                    "&:hover": { backgroundColor: "#1bfb001c" },
+                  }}
+                />
               </Tabs>
             </>
           )}
           <IconButton
             sx={{
               transform: "scale(1.5)",
-              color: "white",
-              "&:hover": { color: "#bdffcb" },
+              color: "#333",
+              "&:hover": { color: "#ff6a00" },
             }}
           >
             <ShoppingCartIcon sx={{ margin: "10px" }} />
