@@ -1,5 +1,4 @@
 import pelota from "./pelota.svg";
-import "./App.css";
 
 function App() {
   return (

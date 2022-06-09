@@ -1,0 +1,21 @@
+.Pelota {
+  height: 5vmin;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Pelota {
+    animation: Pelota-spin infinite 20s linear;
+    max-width: 100%;
+    align-self: center;
+    margin-right: 2px;
+  }
+}
+
+@keyframes Pelota-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
