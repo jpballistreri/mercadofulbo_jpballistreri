@@ -12,7 +12,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import DrawerComp from "./Drawer";
 import Titulo from "./Titulo";
 
-const Header = () => {
+export default function Header() {
   const [value, setValue] = useState();
   const theme = useTheme();
   const responsiveMd = useMediaQuery(theme.breakpoints.down("md"));
@@ -76,6 +76,4 @@ const Header = () => {
       </AppBar>
     </>
   );
-};
-
-export default Header;
+}

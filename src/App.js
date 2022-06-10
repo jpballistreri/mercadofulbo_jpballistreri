@@ -1,12 +1,11 @@
-import pelota from "./pelota.svg";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={pelota} className="App-logo" alt="logo" />
-        <p Style={"font-size: 30px"}>mercado fulbo</p>
-      </header>
+      <>
+        <Navbar />
+      </>
     </div>
   );
 }

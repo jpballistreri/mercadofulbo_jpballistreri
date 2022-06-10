@@ -24,7 +24,7 @@ const DrawerComp = () => {
       >
         <List>
           {links.map((link, index) => (
-            <ListItemButton key={index}>
+            <ListItemButton key={index} onClick={() => setOpenDrawer(false)}>
               <ListItemIcon>
                 <ListItemText>
                   <Typography variant="h6" color="primary">
