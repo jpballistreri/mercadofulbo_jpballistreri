@@ -19,12 +19,12 @@ const StyledBadge = styled(BadgeUnstyled)`
   & .${badgeUnstyledClasses.badge} {
     z-index: auto;
     width: 14px;
-    height: 16px;
-    padding: 0 3px;
+    height: 17px;
+    padding: 0 2px;
     color: #fff;
     font-weight: 600;
     font-size: 9px;
-    line-height: 16px;
+    line-height: 18px;
     white-space: nowrap;
     text-align: center;
     background: red;
