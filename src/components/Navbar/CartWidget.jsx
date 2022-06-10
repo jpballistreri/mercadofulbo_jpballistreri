@@ -18,12 +18,12 @@ const StyledBadge = styled(BadgeUnstyled)`
 
   & .${badgeUnstyledClasses.badge} {
     z-index: auto;
-    width: 10px;
+    width: 14px;
     height: 16px;
-    padding: 0 5px;
+    padding: 0 3px;
     color: #fff;
     font-weight: 600;
-    font-size: 10px;
+    font-size: 9px;
     line-height: 16px;
     white-space: nowrap;
     text-align: center;
@@ -45,7 +45,7 @@ const StyledBadge = styled(BadgeUnstyled)`
   }
 `;
 
-function CartWidget({ cartProducts = 99 }) {
+function CartWidget({ cartProducts = 199 }) {
   return (
     <IconButton
       sx={{
