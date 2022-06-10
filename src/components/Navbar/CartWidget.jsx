@@ -9,22 +9,22 @@ const StyledBadge = styled(BadgeUnstyled)`
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 12px;
   list-style: none;
   font-family: IBM Plex Sans, sans-serif;
   position: relative;
   display: inline-block;
-  line-height: 1;
+  line-height: 0;
 
   & .${badgeUnstyledClasses.badge} {
     z-index: auto;
-    min-width: 10px;
-    height: 20px;
+    width: 10px;
+    height: 16px;
     padding: 0 5px;
     color: #fff;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 10px;
-    line-height: 20px;
+    line-height: 16px;
     white-space: nowrap;
     text-align: center;
     background: red;
@@ -45,7 +45,7 @@ const StyledBadge = styled(BadgeUnstyled)`
   }
 `;
 
-function CartWidget({ cartProducts = 1 }) {
+function CartWidget({ cartProducts = 99 }) {
   return (
     <IconButton
       sx={{

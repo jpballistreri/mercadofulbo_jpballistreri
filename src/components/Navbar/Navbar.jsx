@@ -19,10 +19,7 @@ export default function Header() {
 
   return (
     <>
-      <AppBar
-        variant="dense"
-        style={{ background: "white", marginTop: "10px" }}
-      >
+      <AppBar variant="dense" style={{ background: "white", padding: "15px" }}>
         <Toolbar>
           {responsiveMd ? (
             <>

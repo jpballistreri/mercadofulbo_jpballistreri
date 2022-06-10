@@ -44,11 +44,7 @@ const DrawerComp = () => {
         }}
         onClick={() => setOpenDrawer(!openDrawer)}
       >
-        <AppsIcon
-          sx={{
-            margin: "10px",
-          }}
-        />
+        <AppsIcon />
       </IconButton>
     </>
   );
