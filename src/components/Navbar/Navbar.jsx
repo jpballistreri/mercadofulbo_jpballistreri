@@ -8,9 +8,9 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import DrawerComp from "./Drawer";
 import Titulo from "./Titulo";
+import CartWidget from "./CartWidget";
 
 export default function Header() {
   const [value, setValue] = useState();
@@ -19,7 +19,10 @@ export default function Header() {
 
   return (
     <>
-      <AppBar style={{ background: "white" }}>
+      <AppBar
+        variant="dense"
+        style={{ background: "white", marginTop: "10px" }}
+      >
         <Toolbar>
           {responsiveMd ? (
             <>
@@ -63,15 +66,8 @@ export default function Header() {
               </Tabs>
             </>
           )}
-          <IconButton
-            sx={{
-              transform: "scale(1.5)",
-              color: "#333",
-              "&:hover": { color: "#ff6a00" },
-            }}
-          >
-            <ShoppingCartIcon sx={{ margin: "10px" }} />
-          </IconButton>
+
+          <CartWidget sx={{ margin: "10px" }} />
         </Toolbar>
       </AppBar>
     </>
