@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Typography, Container, Grid } from "@mui/material";
 import { green, grey } from "@mui/material/colors";
-import btc from "./btc.png";
 
 export default function Camiseta({ url_image, team, model, brand, price }) {
   return (

@@ -1,7 +1,5 @@
 import React from "react";
 import { Box, Typography, Container, Grid } from "@mui/material";
-import { green, grey } from "@mui/material/colors";
-import Carousel from "react-material-ui-carousel";
 import Camiseta from "../Camiseta/Camiseta";
 
 function ItemListContainer({ greeting }) {
