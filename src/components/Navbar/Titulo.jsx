@@ -13,7 +13,11 @@ function Titulo({ responsiveMd }) {
           <Typography variant="h5" color="black">
             mercado
           </Typography>
-          <Typography variant="h5" color="#ff6a00" sx={{ fontWeight: 600 }}>
+          <Typography
+            variant="h5"
+            color="primary.main"
+            sx={{ fontWeight: 600 }}
+          >
             fulbo
           </Typography>
         </Box>
@@ -23,7 +27,11 @@ function Titulo({ responsiveMd }) {
           <Typography variant="h5" color="black">
             mercado
           </Typography>
-          <Typography variant="h5" color="#ff6a00" sx={{ fontWeight: 600 }}>
+          <Typography
+            variant="h5"
+            color="primary.main"
+            sx={{ fontWeight: 600 }}
+          >
             fulbo
           </Typography>
         </Box>

@@ -40,7 +40,7 @@ const DrawerComp = () => {
         sx={{
           transform: "scale(1.6)",
           color: "#333",
-          "&:hover": { color: "#ff6a00" },
+          "&:hover": { color: "primary.main" },
         }}
         onClick={() => setOpenDrawer(!openDrawer)}
       >

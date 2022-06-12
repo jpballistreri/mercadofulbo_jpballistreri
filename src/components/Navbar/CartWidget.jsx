@@ -45,13 +45,13 @@ const StyledBadge = styled(BadgeUnstyled)`
   }
 `;
 
-function CartWidget({ cartProducts = 199 }) {
+function CartWidget({ cartProducts = 0 }) {
   return (
     <IconButton
       sx={{
         transform: "scale(1.6)",
         color: "#333",
-        "&:hover": { color: "#ff6a00" },
+        "&:hover": { color: "primary.main" },
       }}
     >
       <StyledBadge badgeContent={cartProducts}>

@@ -19,7 +19,11 @@ export default function Header() {
 
   return (
     <>
-      <AppBar variant="dense" style={{ background: "white", padding: "15px" }}>
+      <AppBar
+        position="static"
+        variant="dense"
+        style={{ background: "white", padding: "10px 15px 5px 15px" }}
+      >
         <Toolbar>
           {responsiveMd ? (
             <>
@@ -41,7 +45,10 @@ export default function Header() {
                   sx={{
                     borderRadius: "50px",
                     color: "#333",
-                    "&:hover": { backgroundColor: "#1bfb001c" },
+                    "&:hover": {
+                      backgroundColor: "primary.dark",
+                      color: "whitesmoke",
+                    },
                   }}
                 />
                 <Tab
@@ -49,7 +56,10 @@ export default function Header() {
                   sx={{
                     borderRadius: "50px",
                     color: "#333",
-                    "&:hover": { backgroundColor: "#1bfb001c" },
+                    "&:hover": {
+                      backgroundColor: "primary.dark",
+                      color: "whitesmoke",
+                    },
                   }}
                 />
                 <Tab
@@ -57,14 +67,17 @@ export default function Header() {
                   sx={{
                     borderRadius: "50px",
                     color: "#333",
-                    "&:hover": { backgroundColor: "#1bfb001c" },
+                    "&:hover": {
+                      backgroundColor: "primary.dark",
+                      color: "whitesmoke",
+                    },
                   }}
                 />
               </Tabs>
             </>
           )}
 
-          <CartWidget sx={{ margin: "10px" }} />
+          <CartWidget sx={{ margin: "10px" }} cartProducts={100} />
         </Toolbar>
       </AppBar>
     </>
