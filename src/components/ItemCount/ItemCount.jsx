@@ -5,8 +5,8 @@ import RemoveCircleIcon from "@mui/icons-material/RemoveCircle";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import { useState } from "react";
 
-function ItemCount({ stock = 0, initial = 1, onAdd }) {
-  const [itemsState, setItemsState] = useState(initial);
+function ItemCount({ stock, initial, onAdd }) {
+  const [itemsState, setItemsState] = useState(stock === 0 ? 0 : initial);
 
   const agregarItem = () => {
     if (stock > 0 && itemsState < stock) {
