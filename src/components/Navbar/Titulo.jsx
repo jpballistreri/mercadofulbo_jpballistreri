@@ -24,13 +24,13 @@ function Titulo({ responsiveMd }) {
       ) : (
         <Box sx={{ display: "flex" }}>
           <img src={pelota} className="Pelota" alt="logo" />
-          <Typography variant="h5" color="black">
+          <Typography variant="h5" color="black" sx={{ margin: "auto" }}>
             mercado
           </Typography>
           <Typography
             variant="h5"
             color="primary.main"
-            sx={{ fontWeight: 600 }}
+            sx={{ fontWeight: 600, margin: "auto" }}
           >
             fulbo
           </Typography>

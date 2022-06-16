@@ -1,10 +1,16 @@
 import React from "react";
 import { Box, Typography, Container, Grid } from "@mui/material";
 import Camiseta from "../Camiseta/Camiseta";
+import ItemCount from "../ItemCount/ItemCount";
+
+const onAdd = (cantidadItems) => {
+  alert(cantidadItems);
+};
 
 function ItemListContainer({ greeting }) {
   return (
     <>
+      <ItemCount stock={5} initial={1} onAdd={onAdd} />
       <Box
         sx={{
           bgcolor: "primary.dark",
