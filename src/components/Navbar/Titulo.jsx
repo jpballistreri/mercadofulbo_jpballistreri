@@ -10,13 +10,13 @@ function Titulo({ responsiveMd }) {
       {responsiveMd === true ? (
         <Box sx={{ display: "flex", margin: "auto" }}>
           <img src={pelota} className="Pelota" alt="logo" />
-          <Typography variant="h5" color="black">
+          <Typography variant="h5" color="black" sx={{ margin: "auto" }}>
             mercado
           </Typography>
           <Typography
             variant="h5"
             color="primary.main"
-            sx={{ fontWeight: 600 }}
+            sx={{ fontWeight: 600, margin: "auto" }}
           >
             fulbo
           </Typography>

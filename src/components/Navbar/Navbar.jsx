@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import DrawerComp from "./Drawer";
 import Titulo from "./Titulo";
-import CartWidget from "./CartWidget";
+import CartWidget from "../CartWidget/CartWidget";
 
 export default function Header() {
   const [value, setValue] = useState();
@@ -43,7 +43,7 @@ export default function Header() {
                 <Tab
                   label="Productos"
                   sx={{
-                    borderRadius: "50px",
+                    borderRadius: "2px",
                     color: "#333",
                     "&:hover": {
                       backgroundColor: "primary.dark",
@@ -54,7 +54,7 @@ export default function Header() {
                 <Tab
                   label="Ofertas"
                   sx={{
-                    borderRadius: "50px",
+                    borderRadius: "2px",
                     color: "#333",
                     "&:hover": {
                       backgroundColor: "primary.dark",
@@ -65,7 +65,7 @@ export default function Header() {
                 <Tab
                   label="Contacto"
                   sx={{
-                    borderRadius: "50px",
+                    borderRadius: "2px",
                     color: "#333",
                     "&:hover": {
                       backgroundColor: "primary.dark",
