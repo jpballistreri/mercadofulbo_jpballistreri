@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Typography, Container, Grid } from "@mui/material";
-import { green, grey } from "@mui/material/colors";
+import { grey } from "@mui/material/colors";
 
-export default function Item({ id, pictureUrl, title, description, price }) {
+export default function Item({ pictureUrl, title, description, price }) {
   return (
     <Grid item>
       <Box

@@ -12,7 +12,6 @@ function ItemListContainer({ greeting }) {
   return (
     <>
       <ItemCount stock={5} initial={1} onAdd={onAdd} />
-
       <Box
         sx={{
           bgcolor: "primary.dark",

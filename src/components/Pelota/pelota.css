@@ -2,7 +2,7 @@
   height: 6vmin;
 }
 
-.PelotaLoad {
+.PelotaCarga {
   height: 6vmin;
 }
 
@@ -13,8 +13,8 @@
     align-self: center;
     margin-right: 2px;
   }
-  .PelotaLoad {
-    animation: Pelota-spin infinite 6s linear;
+  .PelotaCarga {
+    animation: Pelota-spin infinite 0.7s linear;
     max-width: 100%;
     align-self: center;
     margin-right: 2px;
