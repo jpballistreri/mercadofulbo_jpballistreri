@@ -1,0 +1,37 @@
+[
+  {
+    "id": "01",
+    "title": "Camiseta Argentina",
+    "description": "Camiseta argentina 1998 1999 Adidas",
+    "price": "1050",
+    "pictureUrl": "/camisetas/argentina_1998_99_titular.png"
+  },
+  {
+    "id": "02",
+    "title": "Camiseta Uruguay",
+    "description": "Camiseta Uruguay 2021 2022 Puma",
+    "price": "900",
+    "pictureUrl": "/camisetas/uruguay_2021_2022_titular.png"
+  },
+  {
+    "id": "03",
+    "title": "Camiseta Brasil",
+    "description": "Camiseta Brasil 1991 1993 Umbro",
+    "price": "1300",
+    "pictureUrl": "/camisetas/brasil_1991_1993.png"
+  },
+  {
+    "id": "04",
+    "title": "Camiseta Colombia",
+    "description": "Camiseta Colombia 1998 01",
+    "price": "780",
+    "pictureUrl": "/camisetas/colombia_1998_01_titular.png"
+  },
+  {
+    "id": "05",
+    "title": "Camiseta Chile",
+    "description": "Camiseta Chile 2010 2011",
+    "price": "600",
+    "pictureUrl": "/camisetas/chile_2010_2011_titular.png"
+  }
+]

@@ -1,10 +1,20 @@
-.Pelota {
+.PelotaTitulo {
+  height: 6vmin;
+}
+
+.PelotaLoad {
   height: 6vmin;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .Pelota {
-    animation: Pelota-spin infinite 7s linear;
+  .PelotaTitulo {
+    animation: Pelota-spin infinite 6s linear;
+    max-width: 100%;
+    align-self: center;
+    margin-right: 2px;
+  }
+  .PelotaLoad {
+    animation: Pelota-spin infinite 6s linear;
     max-width: 100%;
     align-self: center;
     margin-right: 2px;

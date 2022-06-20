@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Typography, Container, Grid } from "@mui/material";
 import { green, grey } from "@mui/material/colors";
 
-export default function Camiseta({ url_image, team, model, brand, price }) {
+export default function Item({ id, pictureUrl, title, description, price }) {
   return (
     <Grid item>
       <Box
@@ -14,15 +14,15 @@ export default function Camiseta({ url_image, team, model, brand, price }) {
         }}
       >
         <img
-          src={url_image}
+          src={pictureUrl}
           style={{ width: 300, height: 280 }}
-          alt={{ team }}
+          alt={{ title }}
         />
         <Typography variant="h5" color={grey[900]}>
-          {team}
+          {title}
         </Typography>
-        <Typography variant="body2">{model}</Typography>
-        <Typography variant="body1">{brand}</Typography>
+        <Typography variant="body2">{description}</Typography>
+
         <Typography variant="h6">${price}</Typography>
       </Box>
     </Grid>

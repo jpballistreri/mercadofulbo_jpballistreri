@@ -9,7 +9,7 @@ function Titulo({ responsiveMd }) {
     <>
       {responsiveMd === true ? (
         <Box sx={{ display: "flex", margin: "auto" }}>
-          <img src={pelota} className="Pelota" alt="logo" />
+          <img src={pelota} className="PelotaTitulo" alt="logo" />
           <Typography variant="h5" color="black" sx={{ margin: "auto" }}>
             mercado
           </Typography>
@@ -23,7 +23,7 @@ function Titulo({ responsiveMd }) {
         </Box>
       ) : (
         <Box sx={{ display: "flex" }}>
-          <img src={pelota} className="Pelota" alt="logo" />
+          <img src={pelota} className="PelotaTitulo" alt="logo" />
           <Typography variant="h5" color="black" sx={{ margin: "auto" }}>
             mercado
           </Typography>
