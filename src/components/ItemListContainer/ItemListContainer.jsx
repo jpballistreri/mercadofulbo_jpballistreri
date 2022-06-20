@@ -1,6 +1,6 @@
 import React from "react";
-import { Box, Typography, Container, Grid } from "@mui/material";
-import Item from "../Item/Item";
+import { Box, Typography, Container } from "@mui/material";
+
 import ItemCount from "../ItemCount/ItemCount";
 import ItemList from "../ItemList/ItemList";
 
