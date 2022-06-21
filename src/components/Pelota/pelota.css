@@ -8,7 +8,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .PelotaTitulo {
-    animation: Pelota-spin infinite 6s linear;
+    animation: Pelota-spin infinite 15s linear;
     max-width: 100%;
     align-self: center;
     margin-right: 2px;

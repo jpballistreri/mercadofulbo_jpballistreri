@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "@mui/material";
 import ItemList from "../ItemList/ItemList";
 
-function ItemListContainer({ greeting }) {
+function ItemListContainer() {
   return (
     <Container
       sx={{

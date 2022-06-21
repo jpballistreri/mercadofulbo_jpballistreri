@@ -2,6 +2,7 @@ import Footer from "./components/Footer/Footer";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import Navbar from "./components/Navbar/Navbar";
 import Welcome from "./components/Welcome/Welcome";
+
 function App() {
   return (
     <div className="App">
@@ -9,7 +10,7 @@ function App() {
         <Navbar />
         <Welcome
           greeting={
-            "MercadoFulbo, el mejor lugar para comprar camisetas de fútbol."
+            "Todas las camisetas de FIFA World Cup Qatar 2022 en la puerta de tu casa! 🚀Envíos gratis a cualquier parte del mundo!🌎"
           }
         />
         <ItemListContainer />
