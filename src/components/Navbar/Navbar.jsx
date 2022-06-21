@@ -40,7 +40,7 @@ export default function Header() {
                 onChange={(e, value) => setValue(value)}
               >
                 <Tab
-                  label="Productos"
+                  label="Home"
                   sx={{
                     borderRadius: "2px",
                     color: "#333",

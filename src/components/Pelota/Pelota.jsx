@@ -8,7 +8,9 @@ function Pelota({ classPelota = "PelotaTitulo" }) {
     case "PelotaCarga":
       return (
         <>
-          <Typography>Loading...</Typography>
+          <Typography variant="subtitle2" sx={{ fontStyle: "italic" }}>
+            Cargando...
+          </Typography>
           <img src={vectorPelota} className="PelotaCarga" alt="logo" />
         </>
       );

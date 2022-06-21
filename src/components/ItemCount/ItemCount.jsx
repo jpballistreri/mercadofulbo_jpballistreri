@@ -4,6 +4,7 @@ import { Typography, Button } from "@mui/material";
 import RemoveCircleIcon from "@mui/icons-material/RemoveCircle";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import { useState } from "react";
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 
 function ItemCount({ stock, initial, onAdd }) {
   const [itemsState, setItemsState] = useState(stock === 0 ? 0 : initial);
@@ -27,6 +28,7 @@ function ItemCount({ stock, initial, onAdd }) {
           width: "165px",
           borderRadius: "5px",
           textAlign: "center",
+          margin: "auto",
         }}
       >
         <Typography
@@ -36,9 +38,7 @@ function ItemCount({ stock, initial, onAdd }) {
             fontWeight: "regular",
             lineHeight: 1.2,
           }}
-        >
-          ItemCount
-        </Typography>
+        ></Typography>
         <Box
           sx={{
             display: "flex",
@@ -80,6 +80,7 @@ function ItemCount({ stock, initial, onAdd }) {
           </Button>
         </Box>
         <Button
+          sx={{ borderRadius: "10px" }}
           variant="outlined"
           color="success"
           size="small"
@@ -87,7 +88,7 @@ function ItemCount({ stock, initial, onAdd }) {
             onAdd(itemsState);
           }}
         >
-          Agregar al carrito
+          <AddShoppingCartIcon /> Agregar al carrito
         </Button>
       </Box>
     </>
