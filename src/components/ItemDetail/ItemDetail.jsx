@@ -7,6 +7,7 @@ export default function Item({ pictureUrl, title, description, price }) {
   const onAdd = (cantidadItems) => {
     alert(cantidadItems);
   };
+
   return (
     <Fade in={true}>
       <Grid item>
