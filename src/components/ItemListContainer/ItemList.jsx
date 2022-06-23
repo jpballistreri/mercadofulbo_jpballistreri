@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import productosJson from "../../items.json";
-import ItemDetail from "./ItemDetail";
+import Item from "../Item/Item";
 import { Grid } from "@mui/material";
 import Pelota from "../Pelota/Pelota";
-import { Container } from "@mui/material";
 
 function ItemList() {
   const [productos, setProductos] = useState(null);
@@ -33,33 +32,26 @@ function ItemList() {
   }, []);
 
   return (
-    <Container
-      sx={{
-        width: "full",
-        textAlign: "center",
-        paddingBottom: "20px",
-        paddingTop: "30px",
-      }}
-    >
-      <Grid container spacing={8} justifyContent="center">
-        {loading && (
-          <Grid item>
-            <Pelota classPelota="PelotaCarga" />
-          </Grid>
-        )}
-        {error && <Grid item>"ERROR: Intenta ingresar en unos minutos."</Grid>}
-        {productos &&
-          productos.map((producto) => (
-            <ItemDetail
+    <Grid container spacing={8} justifyContent="center">
+      {loading && (
+        <Grid item>
+          <Pelota classPelota="PelotaCarga" />
+        </Grid>
+      )}
+      {error && <Grid item>"ERROR: Intenta ingresar en unos minutos."</Grid>}
+      {productos &&
+        productos.map((producto) => {
+          return (
+            <Item
               key={producto.id}
               pictureUrl={producto.pictureUrl}
               title={producto.title}
               description={producto.description}
               price={producto.price}
             />
-          ))}
-      </Grid>
-    </Container>
+          );
+        })}
+    </Grid>
   );
 }
 
