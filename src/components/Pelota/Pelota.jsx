@@ -9,7 +9,7 @@ function Pelota({ classPelota = "PelotaTitulo" }) {
       return (
         <>
           <Typography variant="subtitle2" sx={{ fontStyle: "italic" }}>
-            Cargando...
+            Loading...
           </Typography>
           <img src={vectorPelota} className="PelotaCarga" alt="logo" />
         </>
