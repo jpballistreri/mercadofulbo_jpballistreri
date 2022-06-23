@@ -10,7 +10,7 @@ function App() {
         <Navbar />
         <Welcome
           greeting={
-            "Todas las camisetas de FIFA World Cup Qatar 2022 en la puerta de tu casa! 🚀Envíos gratis a cualquier parte del mundo!🌎"
+            "All the FIFA World Cup Qatar 2022 jerseys at your doorstep! 🚀Free shipping anywhere in the world!🌎"
           }
         />
         <ItemListContainer />

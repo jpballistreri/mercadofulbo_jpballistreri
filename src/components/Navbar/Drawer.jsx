@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import AppsIcon from "@mui/icons-material/Apps";
 
-const links = ["Home", "Ofertas", "Contacto"];
+const links = ["Home", "Hot Sale", "About"];
 
 const DrawerComp = () => {
   const [openDrawer, setOpenDrawer] = useState(false);

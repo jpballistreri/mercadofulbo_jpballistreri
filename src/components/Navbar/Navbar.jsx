@@ -51,7 +51,7 @@ export default function Header() {
                   }}
                 />
                 <Tab
-                  label="Ofertas"
+                  label="Hot Sale"
                   sx={{
                     borderRadius: "2px",
                     color: "#333",
@@ -62,7 +62,7 @@ export default function Header() {
                   }}
                 />
                 <Tab
-                  label="Contacto"
+                  label="About"
                   sx={{
                     borderRadius: "2px",
                     color: "#333",

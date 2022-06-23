@@ -1,6 +1,6 @@
-import { Container } from "@mui/material";
-import ItemList from "./ItemList";
 import React, { useEffect, useState } from "react";
+import { Container } from "@mui/material";
+import ItemList from "../ItemList/ItemList";
 import productosJson from "../../items.json";
 import { Grid } from "@mui/material";
 import Pelota from "../Pelota/Pelota";
