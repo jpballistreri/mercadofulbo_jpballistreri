@@ -16,7 +16,7 @@ export default function Footer() {
     >
       <Box sx={{ padding: "10px" }}>
         <Typography>
-          Autor:
+          Author:
           <Link
             href="https://github.com/jpballistreri/mercadofulbo_jpballistreri"
             color="inherit"

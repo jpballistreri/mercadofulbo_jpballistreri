@@ -88,7 +88,7 @@ function ItemCount({ stock, initial, onAdd }) {
             onAdd(itemsState);
           }}
         >
-          <AddShoppingCartIcon /> Agregar al carrito
+          <AddShoppingCartIcon /> Add to Cart
         </Button>
       </Box>
     </>
