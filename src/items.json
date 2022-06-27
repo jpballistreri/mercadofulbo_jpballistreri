@@ -4,34 +4,86 @@
     "title": "Argentina Home Men's Jersey",
     "description": "Argentina Home Men's Soccer Jersey 2022",
     "price": "1050",
-    "pictureUrl": "/camisetas/argentina_1998_99_titular.png"
+    "pictureUrl": "/camisetas/argentina_1998_99_titular.png",
+    "categories": ["man", "jersey"],
+    "moreInfo": ["100% Polyester", "Machine Wash", "Adidas"]
   },
   {
     "id": "02",
     "title": "Uruguay Home Men's Jersey",
     "description": "Uruguay Home Men's Soccer Jersey 2022",
     "price": "900",
-    "pictureUrl": "/camisetas/uruguay_2021_2022_titular.png"
+    "pictureUrl": "/camisetas/uruguay_2021_2022_titular.png",
+    "categories": ["woman", "jersey"],
+    "moreInfo": [
+      "100% Cotton",
+      "Imported",
+      "Official Licensed USWNTPA Product",
+      "100% combed ring-spun cotton",
+      "Side-seamed",
+      "Printed Graphic"
+    ]
   },
   {
     "id": "03",
     "title": "Brasil Home Men's Jersey",
     "description": "Brasil Home Men's Soccer Jersey 2022",
     "price": "1300",
-    "pictureUrl": "/camisetas/brasil_1991_1993.png"
+    "pictureUrl": "/camisetas/brasil_1991_1993.png",
+    "categories": ["man", "jersey"],
+    "moreInfo": [
+      "100% Cotton",
+      "Imported",
+      "Official Licensed USWNTPA Product",
+      "100% combed ring-spun cotton",
+      "Side-seamed",
+      "Printed Graphic"
+    ]
   },
   {
     "id": "04",
     "title": "Colombia Home Men's Jersey",
     "description": "Colombia Home Men's Soccer Jersey 2022",
     "price": "780",
-    "pictureUrl": "/camisetas/colombia_1998_01_titular.png"
+    "pictureUrl": "/camisetas/colombia_1998_01_titular.png",
+    "categories": ["man", "jersey"],
+    "moreInfo": [
+      "100% Cotton",
+      "Imported",
+      "Official Licensed USWNTPA Product",
+      "100% combed ring-spun cotton",
+      "Side-seamed",
+      "Printed Graphic"
+    ]
   },
   {
     "id": "05",
     "title": "Chile Home Men's Jersey",
     "description": "Chile Home Men's Soccer Jersey 2022",
     "price": "600",
-    "pictureUrl": "/camisetas/chile_2010_2011_titular.png"
+    "pictureUrl": "/camisetas/chile_2010_2011_titular.png",
+    "categories": ["woman", "jersey"],
+    "moreInfo": [
+      "Ventilated climacool keeps you cool and dry",
+      "Ribbed V-neck with overlap detail. 100% polyester mock eyelet",
+      "Raglan sleeves; No side seam, Embroidered details"
+    ]
+  },
+  {
+    "id": "06",
+    "title": "Argentina Home Men's Short",
+    "description": "Argentina Home Men's Soccer Short 2022",
+    "price": "600",
+    "pictureUrl": "/camisetas/short_man_argentina.jpg",
+    "categories": ["man", "short"],
+    "moreInfo": [
+      "Mesh",
+      "Elastic closure",
+      "Climalite wicks sweat to keep you dry in every condition.",
+      "Drawcord on elastic waist. 3-Stripes on sides; adidas Badge of Sport screenprinted on leg.",
+      "Mesh insert on inner leg. Replica fit is made for fans and gives you room to move.",
+      "Woven Argentina crest on leg.",
+      "100% recycled polyester interlock"
+    ]
   }
 ]

@@ -29,6 +29,9 @@ function ItemCount({ stock, initial, onAdd }) {
           borderRadius: "5px",
           textAlign: "center",
           margin: "auto",
+          border: "1px solid",
+          borderColor: "primary.dark",
+          padding: "5px",
         }}
       >
         <Typography

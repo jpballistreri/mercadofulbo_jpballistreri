@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Link } from "@mui/material";
-import { width } from "@mui/system";
 import { Typography } from "@mui/material";
 
 export default function Footer() {
@@ -9,9 +8,13 @@ export default function Footer() {
       sx={{
         backgroundColor: "primary.dark",
         color: "white",
-        bottom: "0",
+        left: 0,
+        bottom: 0,
+        right: 0,
         width: "100%",
         textAlign: "right",
+        position: "relative",
+        flexShrink: 0,
       }}
     >
       <Box sx={{ padding: "10px" }}>

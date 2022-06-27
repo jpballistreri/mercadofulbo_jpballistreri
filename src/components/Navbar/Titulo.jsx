@@ -2,6 +2,7 @@ import React from "react";
 import { Box } from "@mui/system";
 import Pelota from "../Pelota/Pelota";
 import { Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function Titulo({ responsiveMd }) {
   return (
