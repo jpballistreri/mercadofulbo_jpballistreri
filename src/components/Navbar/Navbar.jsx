@@ -11,6 +11,7 @@ import DrawerComp from "./Drawer";
 import Titulo from "./Titulo";
 import CartWidget from "../CartWidget/CartWidget";
 import { Link } from "react-router-dom";
+import Categories from "./Categories";
 
 export default function Header() {
   const [value, setValue] = useState(0);
@@ -81,6 +82,7 @@ export default function Header() {
                   }}
                 />
               </Tabs>
+              <Categories />
             </>
           )}
 
