@@ -10,6 +10,7 @@ import {
 import DrawerComp from "./Drawer";
 import Titulo from "./Titulo";
 import CartWidget from "../CartWidget/CartWidget";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [value, setValue] = useState(0);
@@ -31,7 +32,14 @@ export default function Header() {
             </>
           ) : (
             <>
-              <Titulo responsiveMd={false} />
+              <Link
+                to="/"
+                style={{
+                  textDecoration: "none",
+                }}
+              >
+                <Titulo responsiveMd={false} />
+              </Link>
               <Tabs
                 sx={{ marginLeft: "auto" }}
                 indicatorColor="secondary"

@@ -28,20 +28,13 @@ function ItemCount({ stock, initial, onAdd }) {
           width: "165px",
           borderRadius: "5px",
           textAlign: "center",
-          margin: "auto",
-          border: "1px solid",
-          borderColor: "primary.dark",
+          margin: { xs: "auto", md: "10px" },
+          border: "solid",
+          borderColor: "gray",
           padding: "5px",
+          borderWidth: "thin",
         }}
       >
-        <Typography
-          sx={{
-            width: "full",
-            textAlign: "center",
-            fontWeight: "regular",
-            lineHeight: 1.2,
-          }}
-        ></Typography>
         <Box
           sx={{
             display: "flex",
@@ -82,17 +75,19 @@ function ItemCount({ stock, initial, onAdd }) {
             />
           </Button>
         </Box>
-        <Button
-          sx={{ borderRadius: "10px" }}
-          variant="outlined"
-          color="success"
-          size="small"
-          onClick={() => {
-            onAdd(itemsState);
-          }}
-        >
-          <AddShoppingCartIcon /> Add to Cart
-        </Button>
+        <Box sx={{ textAlign: "center" }}>
+          <Button
+            sx={{ borderRadius: "10px" }}
+            variant="outlined"
+            color="success"
+            size="small"
+            onClick={() => {
+              onAdd(itemsState);
+            }}
+          >
+            <AddShoppingCartIcon /> Add to Cart
+          </Button>
+        </Box>
       </Box>
     </>
   );

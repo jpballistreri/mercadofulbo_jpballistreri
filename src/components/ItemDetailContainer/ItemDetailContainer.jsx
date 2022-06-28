@@ -33,10 +33,8 @@ function ItemDetailContainer() {
   return (
     <Container
       sx={{
-        width: "full",
-        textAlign: "left",
+        textAlign: { xs: "center", sm: "left" },
         paddingBottom: "20px",
-        paddingTop: "30px",
       }}
     >
       {loading && (
