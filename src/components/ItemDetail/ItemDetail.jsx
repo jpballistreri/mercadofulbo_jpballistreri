@@ -14,7 +14,6 @@ export default function Item({
   const onAdd = (cantidadItems) => {
     alert(cantidadItems);
   };
-  console.log(moreInfo);
 
   return (
     <Grid container spacing={4} justifyContent="center">
