@@ -29,7 +29,7 @@ export default function Categories() {
   }, []);
 
   return (
-    <div>
+    <>
       <Button
         id="fade-button"
         aria-controls={open ? "fade-menu" : undefined}
@@ -66,6 +66,6 @@ export default function Categories() {
           </Link>
         ))}
       </Menu>
-    </div>
+    </>
   );
 }

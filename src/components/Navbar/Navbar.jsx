@@ -43,44 +43,30 @@ export default function Header() {
               </Link>
               <Tabs
                 sx={{ marginLeft: "auto" }}
+                TabIndicatorProps={{ style: { backgroundColor: "white" } }}
                 indicatorColor="secondary"
                 textColor="inherit"
                 value={value}
                 onChange={(e, value) => setValue(value)}
               >
-                <Tab
-                  label="Home"
-                  sx={{
-                    borderRadius: "2px",
-                    color: "#333",
-                    "&:hover": {
-                      backgroundColor: "primary.dark",
-                      color: "whitesmoke",
-                    },
+                <Link
+                  to="/"
+                  style={{
+                    textDecoration: "none",
                   }}
-                />
-                <Tab
-                  label="Hot Sale"
-                  sx={{
-                    borderRadius: "2px",
-                    color: "#333",
-                    "&:hover": {
-                      backgroundColor: "primary.dark",
-                      color: "whitesmoke",
-                    },
-                  }}
-                />
-                <Tab
-                  label="About"
-                  sx={{
-                    borderRadius: "2px",
-                    color: "#333",
-                    "&:hover": {
-                      backgroundColor: "primary.dark",
-                      color: "whitesmoke",
-                    },
-                  }}
-                />
+                >
+                  <Tab
+                    label="Home"
+                    sx={{
+                      borderRadius: "2px",
+                      color: "black",
+                      "&:hover": {
+                        backgroundColor: "primary.dark",
+                        color: "whitesmoke",
+                      },
+                    }}
+                  />
+                </Link>
               </Tabs>
               <Categories />
             </>

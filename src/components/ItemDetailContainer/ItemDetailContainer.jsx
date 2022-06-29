@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import itemsJson from "../../items.json";
+import productosJson from "../../items.json";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { Grid } from "@mui/material";
 import Pelota from "../Pelota/Pelota";
@@ -15,7 +15,7 @@ function ItemDetailContainer() {
   useEffect(() => {
     const itemsLoad = new Promise((res, rej) => {
       setTimeout(() => {
-        let itemRes = itemsJson.find((item) => item.id === id);
+        let itemRes = productosJson.find((item) => item.id === id);
 
         itemRes ? res(itemRes) : rej("No existe el producto");
       }, 500);
