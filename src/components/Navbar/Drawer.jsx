@@ -7,12 +7,12 @@ import {
   ListItemIcon,
   ListItemText,
   Typography,
+  Box,
 } from "@mui/material";
 import AppsIcon from "@mui/icons-material/Apps";
 import itemsJson from "../../items.json";
 import { Link } from "react-router-dom";
-
-const links = ["Home"];
+import { width } from "@mui/system";
 
 const DrawerComp = () => {
   const [categoriesState, setCategoriesState] = useState([]);
@@ -52,27 +52,27 @@ const DrawerComp = () => {
             </ListItemIcon>
           </ListItemButton>
 
-          {categoriesState.map((link, index) => (
-            <ListItemButton key={index} onClick={() => setOpenDrawer(false)}>
-              <ListItemIcon>
-                <ListItemText>
-                  <Link
-                    to={`/category/${link}`}
-                    style={{
-                      textDecoration: "none",
-                    }}
-                  >
+          {categoriesState.map((category, index) => (
+            <Link
+              to={`/category/${category}`}
+              style={{
+                textDecoration: "none",
+              }}
+            >
+              <ListItemButton key={index} onClick={() => setOpenDrawer(false)}>
+                <ListItemIcon>
+                  <ListItemText>
                     <Typography
                       variant="h6"
                       color="primary"
                       textTransform={"capitalize"}
                     >
-                      {link}
+                      {category}
                     </Typography>
-                  </Link>
-                </ListItemText>
-              </ListItemIcon>
-            </ListItemButton>
+                  </ListItemText>
+                </ListItemIcon>
+              </ListItemButton>
+            </Link>
           ))}
         </List>
       </Drawer>
