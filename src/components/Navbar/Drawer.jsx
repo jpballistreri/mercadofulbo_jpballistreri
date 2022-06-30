@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Drawer,
   IconButton,
@@ -9,11 +9,23 @@ import {
   Typography,
 } from "@mui/material";
 import AppsIcon from "@mui/icons-material/Apps";
+import itemsJson from "../../items.json";
+import { Link } from "react-router-dom";
 
-const links = ["Home", "Hot Sale", "About"];
+const links = ["Home"];
 
 const DrawerComp = () => {
+  const [categoriesState, setCategoriesState] = useState([]);
   const [openDrawer, setOpenDrawer] = useState(false);
+
+  useEffect(() => {
+    //Creando set de categorias
+    let categories = new Set();
+    itemsJson.map((item) =>
+      item.categories.map((category) => categories.add(category))
+    );
+    setCategoriesState([...categories]);
+  }, []);
 
   return (
     <>
@@ -23,13 +35,41 @@ const DrawerComp = () => {
         onClose={() => setOpenDrawer(false)}
       >
         <List>
-          {links.map((link, index) => (
+          <ListItemButton onClick={() => setOpenDrawer(false)}>
+            <ListItemIcon>
+              <ListItemText>
+                <Link
+                  to={"/"}
+                  style={{
+                    textDecoration: "none",
+                  }}
+                >
+                  <Typography variant="h6" color="primary">
+                    Home
+                  </Typography>
+                </Link>
+              </ListItemText>
+            </ListItemIcon>
+          </ListItemButton>
+
+          {categoriesState.map((link, index) => (
             <ListItemButton key={index} onClick={() => setOpenDrawer(false)}>
               <ListItemIcon>
                 <ListItemText>
-                  <Typography variant="h6" color="primary">
-                    {link}
-                  </Typography>
+                  <Link
+                    to={`/category/${link}`}
+                    style={{
+                      textDecoration: "none",
+                    }}
+                  >
+                    <Typography
+                      variant="h6"
+                      color="primary"
+                      textTransform={"capitalize"}
+                    >
+                      {link}
+                    </Typography>
+                  </Link>
                 </ListItemText>
               </ListItemIcon>
             </ListItemButton>
