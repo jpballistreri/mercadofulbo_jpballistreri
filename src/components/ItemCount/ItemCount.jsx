@@ -86,6 +86,8 @@ function ItemCount({ stock, initial, onAdd, item }) {
             size="small"
             onClick={() => {
               addItemToCart(item, itemsState);
+              alert(`${itemsState} products added to cart.`);
+              setItemsState(1);
             }}
           >
             <AddShoppingCartIcon /> Add to Cart
