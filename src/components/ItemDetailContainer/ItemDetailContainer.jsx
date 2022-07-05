@@ -49,16 +49,7 @@ function ItemDetailContainer() {
           <Grid item>ERROR: Producto {id} no encontrado.</Grid>
         </Grid>
       )}
-      {itemState && (
-        <ItemDetail
-          key={itemState.id}
-          pictureUrl={itemState.pictureUrl}
-          title={itemState.title}
-          description={itemState.description}
-          price={itemState.price}
-          moreInfo={itemState.moreInfo}
-        />
-      )}
+      {itemState && <ItemDetail key={itemState.id} item={itemState} />}
     </Container>
   );
 }

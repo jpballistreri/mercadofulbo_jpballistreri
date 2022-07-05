@@ -5,9 +5,12 @@ import RemoveCircleIcon from "@mui/icons-material/RemoveCircle";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import { useState } from "react";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import { myCartContext } from "../CartContext";
+import { useContext } from "react";
 
-function ItemCount({ stock, initial, onAdd }) {
+function ItemCount({ stock, initial, onAdd, item }) {
   const [itemsState, setItemsState] = useState(stock === 0 ? 0 : initial);
+  const { addItemToCart } = useContext(myCartContext);
 
   const agregarItem = () => {
     if (stock > 0 && itemsState < stock) {
@@ -82,7 +85,7 @@ function ItemCount({ stock, initial, onAdd }) {
             color="success"
             size="small"
             onClick={() => {
-              onAdd(itemsState);
+              addItemToCart(item, itemsState);
             }}
           >
             <AddShoppingCartIcon /> Add to Cart

@@ -4,16 +4,12 @@ import { grey } from "@mui/material/colors";
 import ItemCount from "../ItemCount/ItemCount";
 import CircleIcon from "@mui/icons-material/Circle";
 
-export default function Item({
-  pictureUrl,
-  title,
-  description,
-  price,
-  moreInfo,
-}) {
+export default function Item({ item }) {
   const onAdd = (cantidadItems) => {
     alert(cantidadItems);
   };
+
+  const { pictureUrl, title, description, price, moreInfo } = item;
 
   return (
     <Grid container spacing={4} justifyContent="center">
@@ -49,7 +45,7 @@ export default function Item({
           </Box>
           <Typography variant="h5">Price: ${price}</Typography>
 
-          <ItemCount stock={5} initial={1} onAdd={onAdd} />
+          <ItemCount item={item} stock={5} initial={1} onAdd={onAdd} />
         </Container>
       </Grid>
     </Grid>
