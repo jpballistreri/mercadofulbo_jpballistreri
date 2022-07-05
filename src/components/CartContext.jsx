@@ -9,22 +9,21 @@ export default function CartContext({ children }) {
   const [cartItems, setCartItems] = useState([]);
 
   function addItemToCart(item, quantity) {
+    //Busca el item en el cart
     const itemFound = cartItems.find((element) => element.id === item.id);
-    //Si encuentra el item en el cart, suma quantity, si no, le agrega quantity al item del prop
-    itemFound ? (itemFound.quantity += quantity) : (item.quantity = quantity);
-    //Si encuentra el item en el carrito, agrega el itemFound con la suma de quantity
+    //Si lo encuentra, agrega el item con la suma de quantity del item encontrado
     if (itemFound) {
+      itemFound.quantity += quantity;
       setCartItems(
         cartItems.map((element) =>
           element.id === itemFound.id ? itemFound : item
         )
       );
+      //Si no lo encuentra agrega el item con su primer quantity
     } else {
+      item.quantity = quantity;
       setCartItems([...cartItems, item]);
     }
-
-    console.log(item);
-    console.log(cartItems);
   }
   function removeItem(itemId) {
     // Remover un item del cart por usando su id
