@@ -72,7 +72,7 @@ export default function Header() {
             </>
           )}
 
-          <CartWidget sx={{ margin: "10px" }} cartProducts={100} />
+          <CartWidget sx={{ margin: "10px" }} />
         </Toolbar>
       </AppBar>
     </>

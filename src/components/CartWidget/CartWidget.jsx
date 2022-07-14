@@ -2,8 +2,10 @@ import React from "react";
 import { styled } from "@mui/system";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { IconButton } from "@mui/material";
-
+import { myCartContext } from "../CartContext";
 import BadgeUnstyled, { badgeUnstyledClasses } from "@mui/base/BadgeUnstyled";
+import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 const StyledBadge = styled(BadgeUnstyled)`
   box-sizing: border-box;
@@ -45,19 +47,23 @@ const StyledBadge = styled(BadgeUnstyled)`
   }
 `;
 
-function CartWidget({ cartProducts = 0 }) {
+function CartWidget() {
+  const { getCartTotalQuantity } = useContext(myCartContext);
+
   return (
-    <IconButton
-      sx={{
-        transform: "scale(1.6)",
-        color: "#333",
-        "&:hover": { color: "primary.main" },
-      }}
-    >
-      <StyledBadge badgeContent={cartProducts}>
-        <ShoppingCartIcon />
-      </StyledBadge>
-    </IconButton>
+    <Link to={"/cart"}>
+      <IconButton
+        sx={{
+          transform: "scale(1.6)",
+          color: "#333",
+          "&:hover": { color: "primary.main" },
+        }}
+      >
+        <StyledBadge badgeContent={getCartTotalQuantity()}>
+          <ShoppingCartIcon />
+        </StyledBadge>
+      </IconButton>
+    </Link>
   );
 }
 

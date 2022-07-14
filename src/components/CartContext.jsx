@@ -8,7 +8,7 @@ export default function CartContext({ children }) {
   const [darkMode, setDarkMode] = useState(false);
   const [cartItems, setCartItems] = useState([]);
 
-  function addItemToCart(item, quantity) {
+  const addItemToCart = (item, quantity) => {
     //Busca el item en el cart
     const itemFound = cartItems.find((element) => element.id === item.id);
     //Si lo encuentra, agrega el item con la suma de quantity del item encontrado
@@ -24,7 +24,14 @@ export default function CartContext({ children }) {
       item.quantity = quantity;
       setCartItems([...cartItems, item]);
     }
-  }
+  };
+
+  const getCartTotalQuantity = () => {
+    let total = 0;
+    cartItems.map((element) => (total += element.quantity));
+    return total;
+  };
+
   function removeItem(itemId) {
     // Remover un item del cart por usando su id
   }
@@ -38,7 +45,9 @@ export default function CartContext({ children }) {
 
   return (
     <>
-      <myCartContext.Provider value={{ addItemToCart }}>
+      <myCartContext.Provider
+        value={{ addItemToCart, getCartTotalQuantity, cartItems }}
+      >
         {children}
       </myCartContext.Provider>
     </>
